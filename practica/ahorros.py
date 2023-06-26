@@ -1,0 +1,11 @@
+cantidad_depositada = float(input("Ingresa la cantidad de dinero depositada: "))
+tasa_interes = 0.04
+ahorros_1_anio = cantidad_depositada * (1 + tasa_interes)
+ahorros_2_anios = ahorros_1_anio * (1 + tasa_interes)
+ahorros_3_anios = ahorros_2_anios * (1 + tasa_interes)
+ahorros_1_anio = round(ahorros_1_anio, 2)
+ahorros_2_anios = round(ahorros_2_anios, 2)
+ahorros_3_anios = round(ahorros_3_anios, 2)
+print("Ahorros después del primer año:", ahorros_1_anio)
+print("Ahorros después del segundo año:", ahorros_2_anios)
+print("Ahorros después del tercer año:", ahorros_3_anios)
