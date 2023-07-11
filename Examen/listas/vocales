@@ -1,0 +1,10 @@
+def contar_vocales(nombre):
+    vocales = "aeiouAEIOU"
+    contador = 0
+    for letra in nombre:
+        if letra in vocales:
+            contador += 1
+    return contador
+nombres = ('Ana', 'Pedro', 'Andrea', 'Alejandro', 'María', 'Alberto')
+nombres_con_vocales = [nombre for nombre in nombres if contar_vocales(nombre) > 1]
+print(nombres_con_vocales)
